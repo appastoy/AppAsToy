@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace AppAsToy.Coroutine
 {
-    public class Class1
+    internal interface IRunnable : IYieldable
     {
+        IYieldable RunNext();
     }
 }
